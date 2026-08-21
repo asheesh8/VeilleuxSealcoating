@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1180" width="1300" height="1180" role="img">
+  <title>Veilleux Sealcoating — brand sheet</title>
+  <rect width="1300" height="1180" fill="#05070C"/>
+  <rect x="64" y="56" width="1172" height="4" fill="#F2C511"/>
+  <text x="64" y="104" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="4">BRAND SHEET</text>
+  <text x="1236" y="104" fill="#8A93A3" text-anchor="end" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" letter-spacing="2">VEILLEUX SEALCOATING LLC · ESSEX, VERMONT</text>
+
+  <g transform="translate(64,168)"><path fill="#F4F5F7" d="M8,12 L32,12 L50,64 L50,90 L42,90 Z"/><path fill="#F2C511" d="M68,12 L92,12 L58,90 L50,90 L50,64 Z"/></g>
+  <g fill="#F4F5F7" transform="translate(212,178) scale(0.5)">
+      <path transform="translate(0,0)" d="M0,0 L17,0 L31,70 L45,0 L62,0 L38,100 L24,100 Z"/>
+      <path transform="translate(75,0)" d="M0,0 L52,0 L52,17 L17,17 L17,41 L47,41 L47,58 L17,58 L17,83 L52,83 L52,100 L0,100 Z"/>
+      <path transform="translate(140,0)" d="M0,0 L17,0 L17,100 L0,100 Z"/>
+      <path transform="translate(170,0)" d="M0,0 L17,0 L17,83 L48,83 L48,100 L0,100 Z"/>
+      <path transform="translate(231,0)" d="M0,0 L17,0 L17,83 L48,83 L48,100 L0,100 Z"/>
+      <path transform="translate(292,0)" d="M0,0 L52,0 L52,17 L17,17 L17,41 L47,41 L47,58 L17,58 L17,83 L52,83 L52,100 L0,100 Z"/>
+      <path transform="translate(357,0)" d="M0,0 L17,0 L17,68 C17,76 22,83 29,83 C36,83 41,76 41,68 L41,0 L58,0 L58,68 C58,86 45,100 29,100 C13,100 0,86 0,68 Z"/>
+      <path transform="translate(428,0)" d="M0,0 L19,0 L30,32 L41,0 L60,0 L40,50 L60,100 L41,100 L30,66 L19,100 L0,100 L20,50 Z"/>
+  </g>
+  <rect x="212" y="238" width="244.0" height="4" fill="#F2C511"/>
+  <text x="212" y="262" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="14" font-weight="500" letter-spacing="3.4">SEALCOATING &amp; PROPERTY SERVICES</text>
+
+  <text x="64" y="352" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3.4">PALETTE</text>
+  <line x1="64" y1="368" x2="1236" y2="368" stroke="#F4F5F7" stroke-opacity="0.13"/>
+  <rect x="64" y="408" width="150" height="96" rx="5" fill="#05070C" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="64" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">VOID</text>
+  <text x="64" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#05070C</text>
+  <text x="64" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Page ground</text>
+  <rect x="240" y="408" width="150" height="96" rx="5" fill="#0A0C10" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="240" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">ASPHALT</text>
+  <text x="240" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#0A0C10</text>
+  <text x="240" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Primary ink</text>
+  <rect x="416" y="408" width="150" height="96" rx="5" fill="#12161D" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="416" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">SLAB</text>
+  <text x="416" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#12161D</text>
+  <text x="416" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Raised panel</text>
+  <rect x="592" y="408" width="150" height="96" rx="5" fill="#F2C511" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="592" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">STRIPE</text>
+  <text x="592" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#F2C511</text>
+  <text x="592" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Accent — use sparingly</text>
+  <rect x="768" y="408" width="150" height="96" rx="5" fill="#E9ECF1" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="768" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">CHALK</text>
+  <text x="768" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#E9ECF1</text>
+  <text x="768" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Primary text on dark</text>
+  <rect x="944" y="408" width="150" height="96" rx="5" fill="#8A93A3" stroke="#FFFFFF" stroke-opacity="0.22"/>
+  <text x="944" y="528" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="650" letter-spacing="1.6">GRAVEL</text>
+  <text x="944" y="547" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" letter-spacing="0.8">#8A93A3</text>
+  <text x="944" y="564" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="11" opacity="0.72">Secondary text</text>
+
+  <text x="64" y="700" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3.4">TYPOGRAPHY</text>
+  <line x1="64" y1="716" x2="1236" y2="716" stroke="#F4F5F7" stroke-opacity="0.13"/>
+  <text x="64" y="778" fill="#F4F5F7" font-family="Tanker, Impact, sans-serif" font-size="54" letter-spacing="-0.5">TANKER — DISPLAY</text>
+  <text x="64" y="806" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12.5" letter-spacing="1.6">Headlines and statements. Tight tracking, sentence-length maximum.</text>
+  <text x="64" y="874" fill="#F4F5F7" font-family="Switzer, Inter, Arial, sans-serif" font-size="30" font-weight="600">Switzer — interface and body</text>
+  <text x="64" y="902" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12.5" letter-spacing="1.6">Body copy, navigation, forms, and captions. 400 / 500 / 600 / 700.</text>
+  <text x="64" y="952" fill="#F2C511" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4.4">EYEBROW — SWITZER 700, 4.4 TRACKING, UPPERCASE</text>
+
+  <text x="64" y="1024" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="3.4">THE RULE</text>
+  <line x1="64" y1="1040" x2="1236" y2="1040" stroke="#F4F5F7" stroke-opacity="0.13"/>
+  <rect x="64" y="1074" width="150" height="5" fill="#F2C511"/>
+  <text x="64" y="1116" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" letter-spacing="0.9">A four-to-five pixel stripe is the one recurring device: section markers, active nav, focus states,</text>
+  <text x="64" y="1136" fill="#8A93A3" font-family="Switzer, Inter, Arial, sans-serif" font-size="13" letter-spacing="0.9">and the underline beneath the wordmark. It is the freshly cut edge. Never use it as a fill.</text>
+</svg>
