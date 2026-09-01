@@ -31,7 +31,7 @@ export default function WorkPage() {
       />
       <PageHero
         eyebrow="The work"
-        title={<>Forty-one jobs,<br />no stock photos.</>}
+        title={<>{work.length} jobs,<br />no stock photos.</>}
         lede="Every photograph on this site is a property we actually worked on. Nothing here was bought from a library or borrowed from a supplier's brochure."
         image="night-commercial-lot"
       />

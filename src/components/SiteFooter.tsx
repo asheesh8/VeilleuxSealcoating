@@ -10,11 +10,11 @@ export function SiteFooter() {
         <div className="footer__grid">
           <div className="footer__brand">
             <img
-              src="/brand/veilleux-lockup-horizontal-reversed.svg"
+              src="/brand/veilleux-original-logo.png"
               alt={`${company.legal} logo`}
               className="footer__lockup"
-              width="423"
-              height="118"
+              width="2400"
+              height="1136"
             />
             <p className="footer__blurb">
               Sealcoating, pavement repair, winter plowing, grounds, hauling, and handyman work.

@@ -292,6 +292,10 @@ export const workCategories: { id: WorkCategory | 'all'; label: string }[] = [
 ]
 
 export const work: WorkItem[] = [
+  { slug: 'seal-residential-marker', category: 'sealcoating', caption: 'Fresh residential seal blocked off at the street while it cures.', orientation: 'landscape' },
+  { slug: 'seal-two-story-home', category: 'sealcoating', caption: 'Two-car residential drive finished with an even, edge-to-edge coat.', orientation: 'landscape' },
+  { slug: 'seal-landscaped-turn', category: 'sealcoating', caption: 'Curved residential drive sealed cleanly around mature landscaping.', orientation: 'landscape' },
+  { slug: 'seal-country-lane', category: 'sealcoating', caption: 'Long wooded drive finished cleanly from the house to the road.', orientation: 'landscape' },
   { slug: 'seal-sweep-wide', category: 'sealcoating', caption: 'A long sweeping drive, brushed and sealed in a single day.', orientation: 'landscape' },
   { slug: 'night-garage-glow', category: 'sealcoating', caption: 'A cured drive under a garage light. A good seal reads like water.', orientation: 'landscape' },
   { slug: 'seal-colonial-tape', category: 'sealcoating', caption: 'Fresh seal on a colonial driveway, taped and cut clean to the apron.', orientation: 'landscape' },
@@ -312,6 +316,16 @@ export const work: WorkItem[] = [
   { slug: 'seal-ranch-house', category: 'sealcoating', caption: 'Ranch driveway sealed curb to garage.', orientation: 'landscape' },
   { slug: 'edge-detail-sign', category: 'sealcoating', caption: 'Sealed up to the fixture without a drop on the base.', orientation: 'portrait' },
 
+  { slug: 'commercial-striped-finish', category: 'commercial', caption: 'Sealed commercial lot finished with clean parking lines.', orientation: 'portrait' },
+  { slug: 'commercial-crack-prep', category: 'commercial', caption: 'Crack repair laid out before the final surface coat.', orientation: 'portrait' },
+  { slug: 'commercial-crew-application', category: 'commercial', caption: 'Crew applying sealcoat across a large commercial lot.', orientation: 'landscape' },
+  { slug: 'commercial-red-lot-wide', category: 'commercial', caption: 'Full commercial surface completed around the building and drainage.', orientation: 'landscape' },
+  { slug: 'commercial-red-lot-edge', category: 'commercial', caption: 'Finished edge held clean along the building, plantings, and storm drain.', orientation: 'landscape' },
+  { slug: 'commercial-seal-progress', category: 'commercial', caption: 'Mid-application view showing fresh seal against the existing pavement.', orientation: 'landscape' },
+  { slug: 'commercial-access-aisle', category: 'commercial', caption: 'Parking and access aisle restored with crisp white striping.', orientation: 'landscape' },
+  { slug: 'commercial-curb-line', category: 'commercial', caption: 'Freshly sealed storefront lot closed off while it cures.', orientation: 'landscape' },
+  { slug: 'commercial-ada-marking', category: 'commercial', caption: 'Accessible parking markings refreshed after sealcoating.', orientation: 'landscape' },
+  { slug: 'commercial-parking-detail', category: 'commercial', caption: 'Clean hatch lines and parking layout across the finished lot.', orientation: 'landscape' },
   { slug: 'night-commercial-lot', category: 'commercial', caption: 'Commercial lot sealed and restriped, photographed after dark.', orientation: 'landscape' },
   { slug: 'commercial-lot', category: 'commercial', caption: 'Retail lot maintenance: sealing, striping, and pothole repair.', orientation: 'landscape' },
   { slug: 'commercial-dock', category: 'commercial', caption: 'Dock approach prepped for patch and seal.', orientation: 'portrait' },

@@ -153,6 +153,18 @@ textarea {
   top: 1rem;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* -------------------------------------------------------------- typography */
 
 .display {
@@ -442,37 +454,13 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
   flex: none;
 }
 
-.brand__mark {
-  width: 30px;
-  height: 30px;
-  flex: none;
-}
-
-.brand__text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.brand__name {
-  font-family: var(--display);
-  font-size: 1.32rem;
-  line-height: 0.86;
-  letter-spacing: 0.015em;
-  text-transform: uppercase;
-  color: var(--chalk);
-}
-
-.brand__sub {
-  font-size: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--gravel-dim);
+.brand__logo {
+  display: block;
+  width: clamp(118px, 10vw, 150px);
+  height: auto;
 }
 
 .nav {
@@ -641,39 +629,64 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 58%;
+  object-position: center;
 }
 
 .hero__scrim {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(to top, rgba(5, 7, 12, 0.96) 0%, rgba(5, 7, 12, 0.52) 36%, rgba(5, 7, 12, 0.28) 62%, rgba(5, 7, 12, 0.6) 100%),
-    linear-gradient(to right, rgba(5, 7, 12, 0.7) 0%, rgba(5, 7, 12, 0.1) 55%);
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(5, 7, 12, 0.56), transparent 22%);
 }
 
-.hero__body {
-  position: relative;
-  width: 100%;
-  padding-bottom: clamp(3.5rem, 9vh, 7rem);
-  padding-top: 8rem;
+.hero__scrim::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 7, 12, 0.68), transparent 28%);
+  opacity: 0;
+  transition: opacity 550ms var(--ease);
 }
 
-.hero__title {
-  max-width: 15ch;
+.hero[data-ended='true'] .hero__scrim::after {
+  opacity: 1;
 }
 
-.hero__title em {
-  font-style: normal;
-  color: var(--stripe);
+.hero__endcard {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: clamp(1.25rem, 4vh, 2.75rem);
+  pointer-events: none;
 }
 
-.hero__lede {
-  margin-top: 2rem;
-  max-width: 52ch;
-  color: rgba(233, 236, 241, 0.82);
-  font-size: clamp(1.0625rem, 1.4vw, 1.3125rem);
-  line-height: 1.55;
+.hero__end-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  pointer-events: auto;
+  animation: hero-end-actions-in 650ms var(--ease) both;
+}
+
+.hero__end-actions .btn {
+  min-height: 44px;
+  padding: 0.72rem 1.05rem;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+}
+
+.hero__end-actions .btn--ghost {
+  background: rgba(5, 7, 12, 0.58);
+  backdrop-filter: blur(8px);
+}
+
+@keyframes hero-end-actions-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 .hero__actions {
@@ -720,33 +733,6 @@ textarea {
   .hero__meta {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 1rem;
-  }
-}
-
-.hero__scroll {
-  position: absolute;
-  right: var(--gutter);
-  bottom: clamp(3.5rem, 9vh, 7rem);
-  display: grid;
-  justify-items: center;
-  gap: 0.9rem;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--gravel-dim);
-  writing-mode: vertical-rl;
-}
-.hero__scroll::after {
-  content: '';
-  width: 1px;
-  height: 56px;
-  background: linear-gradient(to bottom, var(--stripe), transparent);
-}
-
-@media (max-width: 1040px) {
-  .hero__scroll {
-    display: none;
   }
 }
 
@@ -1527,7 +1513,7 @@ fieldset {
 }
 
 .footer__lockup {
-  width: 232px;
+  width: min(260px, 100%);
   height: auto;
   margin-bottom: 1.5rem;
 }
@@ -1622,13 +1608,18 @@ fieldset {
     display: none;
   }
 
-  /* keep the hero's last row clear of the sticky bar */
+  /* keep the hero's end card clear of the sticky action bar */
   .hero {
-    min-height: calc(100svh - 52px);
+    min-height: clamp(340px, 52svh, 420px);
   }
 
-  .hero__body {
-    padding-bottom: calc(clamp(3.5rem, 9vh, 7rem) + 52px);
+  .hero__endcard {
+    padding-bottom: 1.25rem;
+  }
+
+  /* the sticky bar already carries the estimate action on small screens */
+  .hero__end-actions .btn--primary {
+    display: none;
   }
 
   .mobile-bar {

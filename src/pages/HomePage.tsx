@@ -22,7 +22,7 @@ export default function HomePage() {
         description="Sealcoating, crack filling, line striping, snow plowing, grounds maintenance, junk removal, and handyman services across northern Vermont and upstate New York."
       />
 
-      <Hero />
+      <Hero hasFilm />
 
       {/* ---------------------------------------------------------- statement */}
       <section className="statement">

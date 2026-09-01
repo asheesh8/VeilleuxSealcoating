@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'wouter'
 import { company, services } from '../data/site'
 import { useScrolled } from '../hooks/useScrolled'
-import { Mark } from './Icons'
 import { Button } from './Button'
 
 const nav = [
@@ -37,11 +36,13 @@ export function SiteHeader() {
       <header className="header" data-solid={solid || open}>
         <div className="shell header__inner">
           <Link href="/" className="brand" aria-label={`${company.name} — home`}>
-            <Mark />
-            <span className="brand__text">
-              <span className="brand__name">Veilleux</span>
-              <span className="brand__sub">Sealcoating</span>
-            </span>
+            <img
+              src="/brand/veilleux-logo-transparent.png"
+              alt={`${company.legal} logo`}
+              className="brand__logo"
+              width="2400"
+              height="1136"
+            />
           </Link>
 
           <nav className="nav" aria-label="Primary">

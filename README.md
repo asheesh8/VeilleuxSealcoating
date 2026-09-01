@@ -39,12 +39,13 @@ each section that used to live on the home page now has its own route.
 longitude onto Vermont's outline, so all 33 towns land where they really are.
 Hovering a town in the list highlights it on the map and vice versa.
 
-**Real photography.** 41 images scraped from the client's existing site and
-reprocessed from the 48MP originals: EXIF rotation corrected, curated, renamed,
-captioned, and encoded to webp at 900 / 1600 / 2560px.
+**Real photography.** 55 images from the client's existing site and direct
+photo submissions, reprocessed from the originals: EXIF rotation corrected,
+curated, renamed, captioned, and encoded to webp at 900 / 1600 / 2560px.
 
-**A hero film brief.** A graded cinematic plate plus prompts to turn it into the
-homepage loop. See [`docs/hero-film-brief.md`](docs/hero-film-brief.md).
+**A real hero film.** Client-supplied drone footage is delivered as a muted,
+fast-start 1080p homepage loop with a matching poster fallback. Production notes
+remain in [`docs/hero-film-brief.md`](docs/hero-film-brief.md).
 
 ---
 
@@ -52,8 +53,8 @@ homepage loop. See [`docs/hero-film-brief.md`](docs/hero-film-brief.md).
 
 ```text
 public/brand/          Identity masters (SVG)
-public/media/hero/     Hero plate, poster, and (later) the film
-public/media/work/     41 job photographs, 2–3 widths each
+public/media/hero/     Hero film and poster fallback
+public/media/work/     55 job photographs, 2–3 widths each
 src/components/        Interface, motion, and layout components
 src/data/site.ts       All copy, services, gallery, and contact details
 src/data/territory.ts  Vermont outline and the 33 towns, as real lat/lon
@@ -102,8 +103,8 @@ names are already sensible. See `src/components/EstimateForm.tsx`.
       that is accurate before publishing.
 - [ ] **Shoot one before/after pair** from a fixed position. `BeforeAfter` is
       built and waiting; it is deliberately unused until a real pair exists.
-- [ ] **Generate or shoot the hero film**, then set `<Hero hasFilm />` in
-      `src/pages/HomePage.tsx`.
+- [x] **Homepage hero film** added from client-supplied drone footage, with the
+      audio track removed and a matching reduced-motion poster frame.
 
 ---
 
