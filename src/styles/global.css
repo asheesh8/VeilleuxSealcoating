@@ -437,6 +437,36 @@ textarea {
   border-bottom: 1px solid transparent;
 }
 
+/*
+ * Over the hero film the sky goes bright enough to swallow the navigation, so
+ * the header carries its own scrim: a top-down gradient with no bottom edge,
+ * which reads as shading rather than as a bar. It cross-fades out exactly as
+ * the solid background fades in, so the scroll transition stays one movement.
+ */
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 190%;
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 7, 12, 0.82) 0%,
+    rgba(5, 7, 12, 0.55) 42%,
+    rgba(5, 7, 12, 0.22) 72%,
+    rgba(5, 7, 12, 0) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.4s var(--ease);
+}
+
+.header[data-solid='true']::before {
+  opacity: 0;
+}
+
+.header__inner {
+  position: relative;
+}
+
 .header[data-solid='true'] {
   background: rgba(5, 7, 12, 0.88);
   backdrop-filter: blur(18px) saturate(1.3);
@@ -475,12 +505,12 @@ textarea {
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--gravel);
+  color: rgba(233, 236, 241, 0.86);
   padding-block: 0.5rem;
   transition: color 0.22s var(--ease);
 }
 .nav__link:hover {
-  color: var(--chalk);
+  color: var(--stripe);
 }
 .nav__link::after {
   content: '';
