@@ -81,10 +81,17 @@ framework, no runtime CSS-in-JS. Three production dependencies.
 `vercel.json` and `public/_redirects` are both present, so Vercel and Netlify
 both work as-is with SPA rewrites.
 
-The estimate form is marked up for **Netlify Forms** (`data-netlify`, honeypot,
-`multipart/form-data` for the optional photo). On Vercel or anywhere else, point
-the form's `action` at whatever endpoint the client ends up using — the field
-names are already sensible. See `src/components/EstimateForm.tsx`.
+The estimate form posts to the Vercel function `api/estimate.ts`, which emails the
+shop through Resend. Set these in the Vercel project (names only — never commit
+values):
+
+| Variable | Purpose |
+|---|---|
+| `RESEND_API_KEY` | Required; without it the endpoint returns 503 and the form shows the phone number |
+| `ESTIMATE_TO` | Inbox for requests |
+| `ESTIMATE_FROM` | Verified sender on the Resend domain |
+
+The repo has no public URL set yet.
 
 ---
 
